@@ -5,11 +5,11 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    tasks: null,
   },
-  mutations: {
+  getters: {
+    getTasks: (state) => {
+      return state.tasks;
+    }
   },
-  actions: {
-  },
-  modules: {
-  }
 })

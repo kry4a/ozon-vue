@@ -1,17 +1,13 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component
-export default class Layout extends Vue {
+export default class Form extends Vue {
   render() {
     return (
       <>
-        <div className="layout">
-          <div className="layout__part">
-            <Calendar/>
-          </div>
-          <div className="layout__part">
-            <Form/>
-          </div>
+        <div className="form">
+          <div className="form__title"></div>
+          <div className="form__tasks"></div>
         </div>
       </>
     )

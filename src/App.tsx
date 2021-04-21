@@ -2,6 +2,7 @@ import { Component, Vue } from 'vue-property-decorator';
 import HelloWorld from './components/HelloWorld';
 
 import './App.css'
+import Checkbox from '@/components/ui/checkbox/Checkbox';
 
 @Component
 export default class App extends Vue {
@@ -11,6 +12,7 @@ export default class App extends Vue {
         <img alt="Vue logo" src={require('./assets/logo.png')} />
         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi cupiditate earum eum fugiat iste maiores minima molestiae nesciunt pariatur quod repellat sapiente tempore ut voluptas voluptate, voluptates! Asperiores, eius.</p>
         <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+        <Checkbox/>
       </div>
     )
   }

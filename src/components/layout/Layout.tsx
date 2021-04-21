@@ -1,4 +1,6 @@
 import { Component, Vue } from 'vue-property-decorator';
+import Calendar from '@/components/calendar/Calendar';
+import Form from '@/components/form/Form';
 
 @Component
 export default class Layout extends Vue {

@@ -1,0 +1,40 @@
+@import '../../../styles/variables';
+
+.checkbox {
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+
+    font-size: 15px;
+    line-height: 18px;
+
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 0;
+
+      width: 16px;
+      height: 16px;
+
+      border-radius: 2px;
+      border: 1px solid map-get($oz-colors, border-base);
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: map-get($oz-colors, background-secondary);
+      transition: border-color map-get($oz-transitions, transition-base);
+    }
+  }
+
+  &__input:checked ~ &__label:before {
+
+  }
+}

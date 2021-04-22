@@ -1,0 +1,16 @@
+import { Component, Vue } from 'vue-property-decorator';
+
+@Component
+export default class Header extends Vue {
+
+  render() {
+    return (
+      <div class="calendar__header">
+        <div class="calendar__title">Декабрь 2019</div>
+        <div class="calendar__week">
+          Пн Вт Ср Чт Пт Сб Вс
+        </div>
+      </div>
+    )
+  }
+}

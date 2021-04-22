@@ -25,7 +25,7 @@
       height: 16px;
 
       border-radius: 2px;
-      border: map-get($oz-borders, border-base);
+      border: 1px solid map-get($oz-colors, border-base);
 
       background-position: center;
       background-repeat: no-repeat;
@@ -35,6 +35,6 @@
   }
 
   &__input:checked ~ &__label:before {
-    //TODO add checked icon
+
   }
 }

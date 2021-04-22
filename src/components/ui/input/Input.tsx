@@ -16,12 +16,12 @@ export default class Input extends VueComponent<IInputProps> {
     const { id, label, value, onChange } = this.$props;
 
     return(
-      <div className="input">
+      <div class="input">
         <input
           id={`input-${id}`}
           type={"input"}
           value={value}
-          className="checkbox__input"
+          class="checkbox__input"
           onChange={(e) => {
             onChange(e)
           }}

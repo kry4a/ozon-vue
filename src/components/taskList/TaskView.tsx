@@ -21,7 +21,7 @@ export default class TaskView extends VueComponent<TaskProps> {
     const { title, status } = this;
 
     return (
-      <div className="task">
+      <div class="task">
         <Checkbox label={title} checked={status}/>
       </div>
     )

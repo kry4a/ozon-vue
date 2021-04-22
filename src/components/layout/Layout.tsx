@@ -1,4 +1,4 @@
-import {Component, Prop, Vue} from 'vue-property-decorator';
+import { Component, Prop, Vue } from 'vue-property-decorator';
 import Calendar from '@/components/calendar/Calendar';
 import Form from '@/components/form/Form';
 import TaskList, { Task } from '@/components/taskList/TaskList';
@@ -30,13 +30,12 @@ export default class Layout extends Vue {
   }
 
   render() {
-    console.log('props', this.tasks);
     return (
-      <div className="layout">
-        <div className="layout__part">
+      <div class="layout">
+        <div class="layout__part">
           <Calendar/>
         </div>
-        <div className="layout__part">
+        <div class="layout__part">
           <TaskList tasks={this.getTasks()}/>
           <Form/>
         </div>

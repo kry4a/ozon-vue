@@ -8,7 +8,7 @@ export default class Days extends Vue {
     const days = getDaysInMonth(date.getMonth() + 1,date.getFullYear());
 
     return (
-      <div className="calendar__days">
+      <div class="calendar__days">
         <p>Днней в месяце: {days}</p>
         {
           /*

@@ -5,9 +5,9 @@ export default class Header extends Vue {
 
   render() {
     return (
-      <div className="calendar__header">
-        <div className="calendar__title">Декабрь 2019</div>
-        <div className="calendar__week">
+      <div class="calendar__header">
+        <div class="calendar__title">Декабрь 2019</div>
+        <div class="calendar__week">
           Пн Вт Ср Чт Пт Сб Вс
         </div>
       </div>

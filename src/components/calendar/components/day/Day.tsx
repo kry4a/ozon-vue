@@ -32,7 +32,7 @@ export default class Day extends DayProps {
 
     return (
       <>
-        <div className={this.getClassList(modifiers)}>
+        <div class={this.getClassList(modifiers)}>
           {dateDay}
         </div>
       </>

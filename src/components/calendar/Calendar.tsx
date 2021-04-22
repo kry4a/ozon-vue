@@ -6,7 +6,7 @@ import Header from '@/components/calendar/components/header/Header';
 export default class Calendar extends Vue {
   render() {
     return (
-      <div className="calendar">
+      <div class="calendar">
         <Header/>
         <Days/>
       </div>

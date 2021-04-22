@@ -2,7 +2,7 @@ import { Component, Prop } from 'vue-property-decorator';
 import { VueComponent } from '@/shims-vue';
 import { Task } from '@/components/taskList/TaskList';
 
-//import './Checkbox.scss';
+import './Checkbox.scss'
 
 export interface CheckboxProps {
   id?: string;
@@ -27,18 +27,18 @@ export default class Checkbox extends VueComponent<CheckboxProps> {
 
   render() {
     return(
-      <div className="checkbox">
+      <div class="checkbox">
         <input
           id={`checkbox-${this.id}`}
           type={"checkbox"}
           value={this.value}
-          className="checkbox__input"
+          class="checkbox__input"
           checked={this.checked}
           onChange={(e) => {
             this.onChange(e)
           }}
         />
-        <label htmlFor={`checkbox-${this.id}`} className="checkbox__label">
+        <label htmlFor={`checkbox-${this.id}`} class="checkbox__label">
           {this.label}
         </label>
       </div>

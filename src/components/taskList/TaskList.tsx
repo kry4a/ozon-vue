@@ -20,7 +20,7 @@ export default class TaskList extends VueComponent<TaskListProps> {
 
   render() {
     return (
-      <div className="task-list">
+      <div class="task-list">
         {
           this.tasks?.map((task) => {
             return <TaskView
